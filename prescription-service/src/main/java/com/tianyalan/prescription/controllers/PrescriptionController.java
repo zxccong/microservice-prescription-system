@@ -18,7 +18,7 @@ public class PrescriptionController {
     private PrescriptionService prescriptionService;
 	
 	@RequestMapping(value = "/{cardId}/{medicineCode}", method = RequestMethod.POST)
-	public Prescription savePrescription( @PathVariable("accountId") Long cardId,
+	public Prescription savePrescription( @PathVariable("cardId") Long cardId,
             @PathVariable("medicineCode") String medicineCode) {
 		Prescription prescription = prescriptionService.addPrescription(cardId, medicineCode);		
 		

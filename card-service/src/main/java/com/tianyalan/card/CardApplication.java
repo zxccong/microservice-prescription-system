@@ -12,7 +12,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @EnableEurekaClient
 @EnableCircuitBreaker
 @EnableBinding(Source.class)
-@EnableResourceServer
+//@EnableResourceServer
 public class CardApplication {
 
     public static void main(String[] args) {

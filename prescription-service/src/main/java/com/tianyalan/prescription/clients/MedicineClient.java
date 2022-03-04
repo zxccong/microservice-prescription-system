@@ -24,7 +24,7 @@ public class MedicineClient {
 
         ResponseEntity<Medicine> restExchange =
                 restTemplate.exchange(
-                        "http://localhost:5555/api/medicine/v1/medicines/{medicineCode}", 
+                        "http://zuulservice:5555/api/medicine/v1/medicines/{medicineCode}",
                         HttpMethod.GET,
                         null, Medicine.class, medicineCode);
          

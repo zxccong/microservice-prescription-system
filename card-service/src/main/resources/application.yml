@@ -21,6 +21,11 @@ logging:
       org.springframework.web: WARN
       com.tianyalan: INFO
 
+security:
+  basic:
+    enabled: false
+
+
 eureka:
   instance:
     preferIpAddress: true
@@ -30,4 +35,3 @@ eureka:
     serviceUrl:
         defaultZone: http://localhost:8761/eureka/
 
-        

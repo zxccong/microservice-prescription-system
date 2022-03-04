@@ -49,7 +49,7 @@ public class CardClient {
 
         ResponseEntity<Card> restExchange =
                 restTemplate.exchange(
-                        "http://localhost:5555/api/card/v1/cards/{cardId}",
+                        "http://zuulservice:5555/api/card/v1/cards/{cardId}",
                         HttpMethod.GET,
                         null, Card.class, cardId);
                 

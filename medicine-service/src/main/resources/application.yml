@@ -10,7 +10,9 @@ logging:
       com.netflix: WARN
       org.springframework.web: WARN
       com.tianyalan: INFO
-
+security:
+  basic:
+    enabled: false
 eureka:
   instance:
     preferIpAddress: true
